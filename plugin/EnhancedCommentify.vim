@@ -693,6 +693,15 @@ function s:GetFileTypeSettings(ft)
     let b:ECcommentOpen = ''
     let b:ECcommentClose = ''
 
+    " Format in vimrc:
+        " let g:EnhCommentifyCallbackExists = 'Yes'
+        " function! EnhCommentifyCallback(ft)
+            " if a:ft == 'autohotkey'
+                " let b:ECcommentOpen = ';'
+                " let b:ECcommentClose = ''
+            " endif
+        " endfunction
+
     if exists("g:EnhCommentifyCallbackExists")
 	call EnhCommentifyCallback(fileType)
 
