@@ -1064,7 +1064,7 @@ endfunction
 " Eg. C will never have embedded code...
 "
 function s:CheckPossibleEmbedding(ft)
-    if a:ft =~ '^\(php\|vim\|latte\|eruby\|html\)$'
+    if a:ft =~ '^\(php\|vim\|latte\|eruby\|html\|javascript\)$'
 	let b:ECpossibleEmbedding = 1
     else
 	" Since getting the synID is slow, we set the default to 'no'!
